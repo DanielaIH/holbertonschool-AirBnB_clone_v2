@@ -27,8 +27,14 @@ def hello_hbnb_3(text):
     return "C " + text.replace("_", " ")
 
 
+@app.route("/python")
+def hello_hbnb_5():
+    """hello HBNB"""
+    return "Python is cool"
+
+
 @app.route("/python/<text>")
-def hello_hbnb_4(text='is cool'):
+def hello_hbnb_4(text):
     """hello HBNB"""
     return "Python " + text.replace("_", " ")
 
